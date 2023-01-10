@@ -1,0 +1,97 @@
+@use 'variables' as *;
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.root {
+  border-radius: 20px;
+}
+body {
+  background: #23252c;
+  @media (max-width: 700px) {
+  }
+}
+h1 {
+  //developer name
+  font-family: $font-fred;
+  color: white;
+  font-size: 1.225rem;
+  letter-spacing: 0.1rem;
+  margin-block-start: 1.2rem;
+}
+.info_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+img.profile_img {
+  max-width: 40vw;
+  min-height: 50vh;
+  margin-top: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+h3 {
+  // details of job
+  font-family: $font-lalezar;
+  color: orange;
+  margin-block-start: -0.5rem;
+  letter-spacing: 0.09rem;
+}
+a[href='#'] {
+  margin-block-start: -0.5rem;
+  color: white;
+  text-decoration: none;
+  font-family: $font-roboto;
+  letter-spacing: 0.03rem;
+  transition: scale 200ms ease-in-out;
+  transform: translateZ(0);
+  &:hover {
+    scale: 1.1;
+  }
+}
+.buttons_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin-top: 1.7rem;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    width: calc(100% - 1em);
+    gap: 1rem;
+  }
+}
+.linkedIn {
+  //button with the calssName linkedIn account
+
+  background: #5093e2;
+
+  color: white;
+  text-align: center;
+  & > img {
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
+}
+.email {
+  // this is the button  which links to the email
+  font-size: 1.2rem;
+}

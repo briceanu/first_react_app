@@ -1,0 +1,23 @@
+@use 'variables' as *;
+footer {
+  width: 40vw;
+  min-height: 20vh;
+  background-color: #161619;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+a > img {
+  padding: 2rem 0;
+  width: 40px;
+  height: 40px;
+}
+img {
+  color: white;
+  fill: red;
+}
