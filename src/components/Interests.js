@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import interests from '../style/interests.scss';
 import React from 'react';
 

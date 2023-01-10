@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import about from '../style/about.scss';
 function About({ name }) {
   return (
