@@ -19,7 +19,7 @@ function footer() {
         <a href='/'>
           <img src={instagram} alt='instagram_link' />
         </a>
-        <a href='/'>
+        <a href='https://github.com/briceanu'>
           <img src={github} alt='github_link' />
         </a>
       </footer>
